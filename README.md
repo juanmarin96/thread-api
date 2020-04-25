@@ -85,6 +85,8 @@ void cuenta (char *nombre) {
    *  ¿El resultado obtenido es acorde a lo que usted esperaba?
    Describa la técnica que usó para realizar la medición del tiempo. ¿Cuáles son las debilidades de esta técnica? ¿Existe otra forma de medir el tiempo de ejecución de un programa?
 
+   R:// Se utilizó la función gettimeofday() para medir el tiempo transcurrido de la suma del vector, las imágenes en la carpeta capturas_p5 muestran los distintos tiempos de ejecución para distintos tamaños del vector, tanto en la implementación secuencial como en la versión con hilos. Además existen más funciones clock_gettime(), time(), clock() cada una tomando distintas referencias o midiendo el tiempo de ejecución en CPU como el caso de clock(). En general se aprecia para el conteo secuencial que a medida que aumenta el número de elementos del vector, también va a aumentando el tiempo que tarda en completar la suma, caso que para el tema de los hilos con los experimentos realizados no parece cumplirse, y por el contrario a medida que se hace más grande el array de enteros, el tiempo completar la suma por ambos hilos tiende a disminuir.
+
 6. El profesor de un curso desea un programa en lenguaje C que calcule la desviación estándar (símbolo σ o s) de las notas obtenidas por sus estudiantes en el curso 
 
 ![formula](desviacion_estandar.jpg)
